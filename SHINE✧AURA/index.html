@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shine✧Aura - Seu Portal de Beleza, Moda e Lifestyle</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo font-playfair">Shine✧Aura</a>
+            <button class="mobile-menu-toggle" aria-label="Menu">☰</button>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="font-cormorant">Home</a></li>
+                    <li><a href="pages/blog.html" class="font-cormorant">Blog</a></li>
+                    <li><a href="pages/sobre.html" class="font-cormorant">Sobre</a></li>
+                    <li><a href="pages/contato.html" class="font-cormorant">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-background">
+            <img src="https://images.unsplash.com/photo-1634826260499-7d97a6049913?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1920" alt="Hero">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title font-playfair">Shine✧Aura</h1>
+            <p class="hero-subtitle font-lora">
+                Seu portal de inspiração para uma vida mais elegante e autêntica. Descubra tendências, tutoriais e dicas exclusivas.
+            </p>
+            <a href="pages/blog.html" class="hero-btn font-cormorant">
+                Explorar Conteúdo
+                <span>→</span>
+            </a>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-indicator-inner">
+                <div class="scroll-indicator-dot"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="section">
+        <div class="section-container">
+            <div class="section-header fade-in">
+                <h2 class="section-title font-playfair">Explore por Categoria</h2>
+                <p class="section-subtitle font-lora">Encontre exatamente o que você procura</p>
+            </div>
+            <div class="grid grid-5" id="categories-grid"></div>
+        </div>
+    </section>
+
+    <!-- Featured Posts Section -->
+    <section class="section bg-gradient-purple">
+        <div class="section-container">
+            <div class="section-header fade-in">
+                <h2 class="section-title font-playfair">Destaques da Semana</h2>
+                <p class="section-subtitle font-lora">Não perca nossos artigos mais populares</p>
+            </div>
+            <div id="featured-posts"></div>
+        </div>
+    </section>
+
+    <!-- Latest Posts Section -->
+    <section class="section">
+        <div class="section-container">
+            <div class="section-header fade-in">
+                <h2 class="section-title font-playfair">Últimas Publicações</h2>
+                <p class="section-subtitle font-lora">Sempre atualizado com as tendências mais recentes</p>
+            </div>
+            <div class="grid grid-3" id="latest-posts"></div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section bg-gradient-purple-dark" style="color: white;">
+        <div class="section-container text-center">
+            <h2 class="section-title font-playfair">Pronta para Transformar seu Estilo?</h2>
+            <p class="section-subtitle font-lora" style="color: rgba(255,255,255,0.9);">
+                Junte-se à nossa comunidade e receba conteúdo exclusivo, dicas personalizadas e as últimas tendências diretamente no seu e-mail.
+            </p>
+            <a href="pages/contato.html" class="hero-btn font-cormorant">
+                Entre em Contato
+                <span>→</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="font-playfair">Shine✧Aura</h3>
+                    <p class="font-lora">Seu portal de inspiração para beleza, moda e lifestyle. Descubra seu brilho único.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Instagram">📷</a>
+                        <a href="#" aria-label="Facebook">f</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                        <a href="#" aria-label="Pinterest">📌</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3 class="font-playfair">Links Rápidos</h3>
+                    <ul class="font-lora">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="pages/blog.html">Blog</a></li>
+                        <li><a href="pages/sobre.html">Sobre</a></li>
+                        <li><a href="pages/contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 class="font-playfair">Categorias</h3>
+                    <ul class="font-lora">
+                        <li><a href="pages/blog.html">Moda</a></li>
+                        <li><a href="pages/blog.html">Beleza</a></li>
+                        <li><a href="pages/blog.html">Skincare</a></li>
+                        <li><a href="pages/blog.html">Cabelo</a></li>
+                        <li><a href="pages/blog.html">Lifestyle</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 class="font-playfair">Newsletter</h3>
+                    <p class="font-lora">Receba as últimas novidades diretamente no seu e-mail.</p>
+                    <form class="footer-newsletter">
+                        <input type="email" placeholder="Seu e-mail" required>
+                        <button type="submit" class="font-cormorant">Inscrever</button>
+                    </form>
+                </div>
+            </div>
+           <div class="footer-bottom font-lora">
+
+    <h3>Shine✧Aura</h3>
+
+    <p>
+        Shine✧Aura é um projeto experimental desenvolvido para fins acadêmicos por
+        <strong>João Paulo Portela Silva</strong>, estudante do curso de
+        <strong>Desenvolvimento de Sistemas</strong> do
+        <strong>CETI Desembargador Heli Sobral</strong>.
+    </p>
+
+    <p>
+        Esta plataforma foi criada com o objetivo de demonstrar conhecimentos em
+        desenvolvimento web, incluindo HTML, CSS, JavaScript, design responsivo,
+        experiência do usuário (UX/UI) e organização de conteúdo digital.
+    </p>
+
+    <p>
+        Todo o conteúdo apresentado possui caráter educacional e demonstrativo,
+        não representando empresa, marca comercial ou serviço oficial.
+    </p>
+
+    <p class="footer-copy">
+        Projeto Acadêmico • Desenvolvido por João Paulo Portela Silva • 2026
+    </p>
+
+</div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
