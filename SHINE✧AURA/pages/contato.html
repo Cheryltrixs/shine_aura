@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Shine✧Aura</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="../index.html" class="logo font-playfair">Shine✧Aura</a>
+            <button class="mobile-menu-toggle">☰</button>
+            <nav>
+                <ul>
+                    <li><a href="../index.html" class="font-cormorant">Home</a></li>
+                    <li><a href="blog.html" class="font-cormorant">Blog</a></li>
+                    <li><a href="sobre.html" class="font-cormorant">Sobre</a></li>
+                    <li><a href="contato.html" class="font-cormorant">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero-section" style="min-height: 40vh;">
+        <div class="hero-background">
+            <img src="https://images.unsplash.com/photo-1599847987657-881f11b92a75?w=1920" alt="Contato">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title font-playfair" style="font-size: 4rem;">Contato</h1>
+            <p class="hero-subtitle font-lora">Adoraríamos ouvir você!</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="section-container" style="max-width: 700px;">
+            <form id="contact-form" style="background: white; padding: 3rem; border-radius: 1rem; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);">
+                <div style="margin-bottom: 1.5rem;">
+                    <label class="font-cormorant" style="display: block; margin-bottom: 0.5rem; font-size: 1.125rem; font-weight: 600;">Nome</label>
+                    <input type="text" required style="width: 100%; padding: 0.75rem; border: 2px solid #e5e7eb; border-radius: 0.5rem; font-size: 1rem;">
+                </div>
+                <div style="margin-bottom: 1.5rem;">
+                    <label class="font-cormorant" style="display: block; margin-bottom: 0.5rem; font-size: 1.125rem; font-weight: 600;">E-mail</label>
+                    <input type="email" required style="width: 100%; padding: 0.75rem; border: 2px solid #e5e7eb; border-radius: 0.5rem; font-size: 1rem;">
+                </div>
+                <div style="margin-bottom: 1.5rem;">
+                    <label class="font-cormorant" style="display: block; margin-bottom: 0.5rem; font-size: 1.125rem; font-weight: 600;">Mensagem</label>
+                    <textarea required rows="6" style="width: 100%; padding: 0.75rem; border: 2px solid #e5e7eb; border-radius: 0.5rem; font-size: 1rem; resize: vertical;"></textarea>
+                </div>
+                <button type="submit" class="hero-btn font-cormorant" style="width: 100%; justify-content: center;">
+                    Enviar Mensagem
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-bottom font-lora">
+
+    <h3>Shine✧Aura</h3>
+
+    <p>
+        Shine✧Aura é um projeto experimental desenvolvido para fins acadêmicos por
+        <strong>João Paulo Portela Silva</strong>, estudante do curso de
+        <strong>Desenvolvimento de Sistemas</strong> do
+        <strong>CETI Desembargador Heli Sobral</strong>.
+    </p>
+
+    <p>
+        Esta plataforma foi criada com o objetivo de demonstrar conhecimentos em
+        desenvolvimento web, incluindo HTML, CSS, JavaScript, design responsivo,
+        experiência do usuário (UX/UI) e organização de conteúdo digital.
+    </p>
+
+    <p>
+        Todo o conteúdo apresentado possui caráter educacional e demonstrativo,
+        não representando empresa, marca comercial ou serviço oficial.
+    </p>
+
+    <p class="footer-copy">
+        Projeto Acadêmico • Desenvolvido por João Paulo Portela Silva • 2026
+    </p>
+
+</div>
+    </footer>
+
+    <script>
+        document.querySelector('.mobile-menu-toggle').addEventListener('click', () => {
+            document.querySelector('nav ul').classList.toggle('active');
+        });
+        
+        document.getElementById('contact-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Obrigada pela mensagem! Entraremos em contato em breve.');
+            e.target.reset();
+        });
+    </script>
+</body>
+</html>
