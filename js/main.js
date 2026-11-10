@@ -7,46 +7,6 @@ function alterarTema() {
     atualizarBotaoTema();
 }
 
-function atualizarBotaoTema() {
-    const botao = document.getElementById('theme-toggle');
-    if (!botao) return;
-    botao.textContent = document.body.classList.contains('escuro') ? '☀️ Modo claro' : '🌙 Modo escuro';
-}
-
-function alterarFonte() {
-    document.body.classList.toggle('fonte-grande');
-    localStorage.setItem('tamanhoFonte', document.body.classList.contains('fonte-grande') ? 'grande' : 'normal');
-    atualizarBotaoFonte();
-}
-
-function atualizarBotaoFonte() {
-    const botao = document.getElementById('font-toggle');
-    if (!botao) return;
-    botao.textContent = document.body.classList.contains('fonte-grande') ? '🔡 Fonte normal' : '🔠 Aumentar fonte';
-}
-
-// Mobile Menu Toggle
-document.addEventListener('DOMContentLoaded', function() {
-    if (localStorage.getItem('tema') === 'escuro') {
-        document.body.classList.add('escuro');
-    }
-
-    if (localStorage.getItem('tamanhoFonte') === 'grande') {
-        document.body.classList.add('fonte-grande');
-    }
-
-    atualizarBotaoTema();
-    atualizarBotaoFonte();
-
-    const mobileToggle = document.querySelector('.mobile-menu-toggle');
-    const nav = document.querySelector('nav ul');
-    
-    if (mobileToggle) {
-        mobileToggle.addEventListener('click', function() {
-            nav.classList.toggle('active');
-        });
-    }
-
     // Load categories on home page
     const categoriesGrid = document.getElementById('categories-grid');
     if (categoriesGrid && typeof categories !== 'undefined') {
